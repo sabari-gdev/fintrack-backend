@@ -106,7 +106,7 @@
 
     <build>
         <plugins>
-            <!-- Spring Boot Plugin -->
+            <!-- Spring Boot Maven Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -120,7 +120,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Maven Compiler Plugin with Lombok Annotation Processor -->
+            <!-- Maven Compiler Plugin - Explicit Lombok Configuration -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -132,7 +132,7 @@
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <!-- Let Spring Boot parent manage the version -->
+                            <version>1.18.30</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
