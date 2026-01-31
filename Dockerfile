@@ -28,13 +28,3 @@ EXPOSE 8080
 
 # Run application
 CMD ["java", "-jar", "app.jar"]
-```
-
-**Also create:** `.dockerignore`
-```
-target/
-.mvn/
-.idea/
-*.iml
-.env
-.DS_Store
